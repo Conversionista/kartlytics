@@ -3,7 +3,6 @@ dist
 .tmp
 bower_components
 test/bower_components
-.publish
 
 # Created by https://www.gitignore.io/api/node,yeoman,bower,osx
 
