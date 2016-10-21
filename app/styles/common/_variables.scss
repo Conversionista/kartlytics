@@ -1,0 +1,40 @@
+$c-green: #27ae60;
+$c-green-dark: #3a955e;
+
+$c-blue: #3ea7de;
+$c-blue-dark: #1c709c;
+
+$c-orange: #f05134;
+$c-orange-dark: #b1260d;
+
+$c-red: #C61618;
+$c-red-dark: #a11b1c;
+
+$c-yellow: #fbb90d;
+
+$c-gray: #5E5E5E;
+$c-black: #333333;
+
+$blue-footer: #093246;
+
+$font-family-sans-serif:  "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif:       "museo-slab", serif;
+
+$headings-font-family: $font-family-serif;
+$headings-font-weight: 700;
+
+// Grid settings
+$enable-flex:           true;
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+// Colors
+$brand-primary:             $c-blue;
+$brand-primary-dark:        $c-blue-dark;
+
+$brand-success:             $c-green;
+// $brand-info:                #5bc0de;
+$brand-warning:             $c-yellow;
+$brand-danger:              $c-orange;
+
+$enable-gradients:          true;
