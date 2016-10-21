@@ -2,201 +2,201 @@
 
 /* Data to be populated in the select boxes... */
 var players = [{
-    "email": "andreas.almqvist@conversionista.se",
-    "fname": "Andreas",
-    "lname": "Almqvist Gref",
-    "nick": "AG"
+    'email': 'andreas.almqvist@conversionista.se',
+    'fname': 'Andreas',
+    'lname': 'Almqvist Gref',
+    'nick': 'AG'
 }, {
-    "email": "andreas@conversionista.se",
-    "fname": "Andreas",
-    "lname": "Nordin",
-    "nick": ""
+    'email': 'andreas@conversionista.se',
+    'fname': 'Andreas',
+    'lname': 'Nordin',
+    'nick': ''
 }, {
-    "email": "birgitta@conversionista.se",
-    "fname": "Birgitta",
-    "lname": "Nordström",
-    "nick": "Gitte"
+    'email': 'birgitta@conversionista.se',
+    'fname': 'Birgitta',
+    'lname': 'Nordström',
+    'nick': 'Gitte'
 }, {
-    "email": "carl@conversionista.se",
-    "fname": "Carl",
-    "lname": "Muszynski",
-    "nick": "Musse"
+    'email': 'carl@conversionista.se',
+    'fname': 'Carl',
+    'lname': 'Muszynski',
+    'nick': 'Musse'
 }, {
-    "email": "elin@conversionista.se",
-    "fname": "Elin",
-    "lname": "Linde",
-    "nick": ""
+    'email': 'elin@conversionista.se',
+    'fname': 'Elin',
+    'lname': 'Linde',
+    'nick': ''
 }, {
-    "email": "erik@conversionista.se",
-    "fname": "Erik",
-    "lname": "Öhlén",
-    "nick": ""
+    'email': 'erik@conversionista.se',
+    'fname': 'Erik',
+    'lname': 'Öhlén',
+    'nick': ''
 }, {
-    "email": "fredrik@conversionista.se",
-    "fname": "Fredrik",
-    "lname": "Degerman",
-    "nick": "Degis"
+    'email': 'fredrik@conversionista.se',
+    'fname': 'Fredrik',
+    'lname': 'Degerman',
+    'nick': 'Degis'
 }, {
-    "email": "hannah@conversionista.se",
-    "fname": "Hannah",
-    "lname": "Kransell",
-    "nick": ""
+    'email': 'hannah@conversionista.se',
+    'fname': 'Hannah',
+    'lname': 'Kransell',
+    'nick': ''
 }, {
-    "email": "jens@conversionista.se",
-    "fname": "Jens",
-    "lname": "Svensson",
-    "nick": ""
+    'email': 'jens@conversionista.se',
+    'fname': 'Jens',
+    'lname': 'Svensson',
+    'nick': ''
 }, {
-    "email": "john@conversionista.se",
-    "fname": "John",
-    "lname": "Ekman",
-    "nick": "Chief Conversionista"
+    'email': 'john@conversionista.se',
+    'fname': 'John',
+    'lname': 'Ekman',
+    'nick': 'Chief Conversionista'
 }, {
-    "email": "jonathan@conversionista.se",
-    "fname": "Jonathan",
-    "lname": "Kuronen",
-    "nick": ""
+    'email': 'jonathan@conversionista.se',
+    'fname': 'Jonathan',
+    'lname': 'Kuronen',
+    'nick': ''
 }, {
-    "email": "kajsa@conversionista.se",
-    "fname": "Kajsa",
-    "lname": "Hedqvist",
-    "nick": ""
+    'email': 'kajsa@conversionista.se',
+    'fname': 'Kajsa',
+    'lname': 'Hedqvist',
+    'nick': ''
 }, {
-    "email": "katja@conversionista.se",
-    "fname": "Katja",
-    "lname": "Shershneva",
-    "nick": ""
+    'email': 'katja@conversionista.se',
+    'fname': 'Katja',
+    'lname': 'Shershneva',
+    'nick': ''
 }, {
-    "email": "kim@conversionista.se",
-    "fname": "Kim",
-    "lname": "Dahlroth",
-    "nick": ""
+    'email': 'kim@conversionista.se',
+    'fname': 'Kim',
+    'lname': 'Dahlroth',
+    'nick': ''
 }, {
-    "email": "magnus@conversionista.se",
-    "fname": "Magnus",
-    "lname": "Svanblom",
-    "nick": ""
+    'email': 'magnus@conversionista.se',
+    'fname': 'Magnus',
+    'lname': 'Svanblom',
+    'nick': ''
 }, {
-    "email": "maria@conversionista.se",
-    "fname": "Maria",
-    "lname": "Granath",
-    "nick": ""
+    'email': 'maria@conversionista.se',
+    'fname': 'Maria',
+    'lname': 'Granath',
+    'nick': ''
 }, {
-    "email": "marie.edlund@conversionista.se",
-    "fname": "Marie",
-    "lname": "Edlund",
-    "nick": ""
+    'email': 'marie.edlund@conversionista.se',
+    'fname': 'Marie',
+    'lname': 'Edlund',
+    'nick': ''
 }, {
-    "email": "marie@conversionista.se",
-    "fname": "Marie",
-    "lname": "Horneman",
-    "nick": ""
+    'email': 'marie@conversionista.se',
+    'fname': 'Marie',
+    'lname': 'Horneman',
+    'nick': ''
 }, {
-    "email": "martin@conversionista.se",
-    "fname": "Martin",
-    "lname": "Lundvall",
-    "nick": ""
+    'email': 'martin@conversionista.se',
+    'fname': 'Martin',
+    'lname': 'Lundvall',
+    'nick': ''
 }, {
-    "email": "niclas@conversionista.se",
-    "fname": "Niclas",
-    "lname": "Lundberg",
-    "nick": ""
+    'email': 'niclas@conversionista.se',
+    'fname': 'Niclas',
+    'lname': 'Lundberg',
+    'nick': ''
 }, {
-    "email": "osborne@conversionista.se",
-    "fname": "Osborne",
-    "lname": "von Waldegg",
-    "nick": ""
+    'email': 'osborne@conversionista.se',
+    'fname': 'Osborne',
+    'lname': 'von Waldegg',
+    'nick': ''
 }, {
-    "email": "patrik@conversionista.se",
-    "fname": "Patrik",
-    "lname": "Matell",
-    "nick": "cyk0"
+    'email': 'patrik@conversionista.se',
+    'fname': 'Patrik',
+    'lname': 'Matell',
+    'nick': 'cyk0'
 }, {
-    "email": "peter@conversionista.se",
-    "fname": "Peter",
-    "lname": "Jacobson",
-    "nick": ""
+    'email': 'peter@conversionista.se',
+    'fname': 'Peter',
+    'lname': 'Jacobson',
+    'nick': ''
 }, {
-    "email": "sarah@conversionista.se",
-    "fname": "Sarah",
-    "lname": "Hoof",
-    "nick": "hoof1337"
+    'email': 'sarah@conversionista.se',
+    'fname': 'Sarah',
+    'lname': 'Hoof',
+    'nick': 'hoof1337'
 }, {
-    "email": "seif@conversionista.se",
-    "fname": "Seif",
-    "lname": "Fendukly",
-    "nick": ""
+    'email': 'seif@conversionista.se',
+    'fname': 'Seif',
+    'lname': 'Fendukly',
+    'nick': ''
 }, {
-    "email": "simon@conversionista.se",
-    "fname": "Simon",
-    "lname": "Dahla",
-    "nick": ""
+    'email': 'simon@conversionista.se',
+    'fname': 'Simon',
+    'lname': 'Dahla',
+    'nick': ''
 }];
 
 var cups = [{
-    "cup": "Mushroom"
+    'cup': 'Mushroom'
 }, {
-    "cup": "Flower"
+    'cup': 'Flower'
 }, {
-    "cup": "Star"
+    'cup': 'Star'
 }, {
-    "cup": "Special"
+    'cup': 'Special'
 }, {
-    "cup": "Shell"
+    'cup': 'Shell'
 }, {
-    "cup": "Banana"
+    'cup': 'Banana'
 }, {
-    "cup": "Leaf"
+    'cup': 'Leaf'
 }, {
-    "cup": "Lightning"
+    'cup': 'Lightning'
 }];
 
 var modes = [{
-    "mode": 50
+    'mode': 50
 }, {
-    "mode": 100
+    'mode': 100
 }, {
-    "mode": 150
+    'mode': 150
 }, {
-    "mode": 200
+    'mode': 200
 }];
 
 var scores = [{
-    "rank": 1,
-    "score": 15
+    'rank': 1,
+    'score': 15
 }, {
-    "rank": 2,
-    "score": 12
+    'rank': 2,
+    'score': 12
 }, {
-    "rank": 3,
-    "score": 10
+    'rank': 3,
+    'score': 10
 }, {
-    "rank": 4,
-    "score": 9
+    'rank': 4,
+    'score': 9
 }, {
-    "rank": 5,
-    "score": 8
+    'rank': 5,
+    'score': 8
 }, {
-    "rank": 6,
-    "score": 7
+    'rank': 6,
+    'score': 7
 }, {
-    "rank": 7,
-    "score": 6
+    'rank': 7,
+    'score': 6
 }, {
-    "rank": 8,
-    "score": 5
+    'rank': 8,
+    'score': 5
 }, {
-    "rank": 9,
-    "score": 4
+    'rank': 9,
+    'score': 4
 }, {
-    "rank": 10,
-    "score": 3
+    'rank': 10,
+    'score': 3
 }, {
-    "rank": 11,
-    "score": 2
+    'rank': 11,
+    'score': 2
 }, {
-    "rank": 12,
-    "score": 1
+    'rank': 12,
+    'score': 1
 }];
 /* * * * * * * * * * * * * * * * */
 
@@ -215,7 +215,7 @@ mixpanel.set_config({
     cross_subdomain_cookie: true,
 
     // super properties cookie name
-    cookie_name: "",
+    cookie_name: '',
 
     // super properties cookie expiration (in days)
     cookie_expiration: 365,
@@ -268,7 +268,7 @@ function generateUserId(email) {
      */
     String.prototype.hashCode = function() {
         if (Array.prototype.reduce) {
-            return this.split("").reduce(function(a, b) {
+            return this.split('').reduce(function(a, b) {
                 a = ((a << 5) - a) + b.charCodeAt(0);
                 return a & a
             }, 0);
