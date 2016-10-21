@@ -149,6 +149,10 @@ var cups = [{
     'cup': 'Leaf'
 }, {
     'cup': 'Lightning'
+}, {
+    'cup': 'Egg'
+}, {
+    'cup': 'Crossing'
 }];
 
 var modes = [{
@@ -336,9 +340,35 @@ function trackGame(gid, email, cup, score, mode) {
 
     score = parseInt(score);
 
-    if (score === 15) { mixpanel.people.increment('Gold Medals'); }
-    if (score === 12) { mixpanel.people.increment('Silver Medals'); }
-    if (score === 10) { mixpanel.people.increment('Bronze Medals'); }
+    if (score === 15) { 
+        mixpanel.people.increment('Gold Medals');
+        mixpanel.track('Gold Medal', {
+            'Game ID': gid,
+            'distinct_id': generateUserId(email),
+            'Cup': cup,
+            'Mode': mode
+        });
+    }
+    
+    if (score === 12) {
+        mixpanel.people.increment('Silver Medals');
+        mixpanel.track('Silver Medal', {
+        'Game ID': gid,
+        'distinct_id': generateUserId(email),
+        'Cup': cup,
+        'Mode': mode
+        });
+    }
+    
+    if (score === 10) {
+        mixpanel.people.increment('Bronze Medals');
+        mixpanel.track('Bronze Medal', {
+            'Game ID': gid,
+            'distinct_id': generateUserId(email),
+            'Cup': cup,
+            'Mode': mode
+        });
+    }
 
     mixpanel.people.increment('Total Score', score);
     mixpanel.people.increment('Games Played');
@@ -372,7 +402,7 @@ function checkUserValues() {
         } else if (email.length !== 0 && score.length !== 0) {
             // console.log('push data');
 
-            if (emails.indexOf(email) === -1 && scores.indexOf(score) === -1) {
+            if (emails.indexOf(email) === -1) {
 
                 // console.log(emails.indexOf(email))
                 // console.log(scores.indexOf(score))

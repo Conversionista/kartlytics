@@ -7,6 +7,28 @@ var endpoint = 'https://api.conversionista.se/gapi/',
 
 window.aboutMe = window.aboutMe || {};
 
+function setCookie(name, value, days) {
+    'use strict';
+    // var days = 730; // Valid for 2 years
+    if (days !== false) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        var expires = '; expires=' + date.toGMTString();
+        document.cookie = name + '=' + value + expires;
+    }
+    document.cookie = name + '=' + value;
+}
+
+function getCookie(name) {
+    'use strict';
+    var value = '; ' + document.cookie,
+        parts = value.split('; ' + name + '=');
+    if (parts.length === 2) {
+        var readPart = parts.pop().split(';').shift();
+        return readPart;
+    }
+}
+
 function handleClientLoad() {
     'use strict';
     // Load the API client and auth library
@@ -75,6 +97,22 @@ function handleSignoutClick(event) {
     auth2.signOut();
 }
 
+function showWelcome() {
+    'use strict';
+    var title = (name !== undefined && name.length !== 0) ? 'Hello ' + name + '!' : 'Hello!';
+    swal({
+        title: title,
+        text: 'You are all set – <b>Best of luck!</b>',
+        type: 'success',
+        timer: 2000,
+        html: true,
+        allowEscapeKey: true,
+        allowOutsideClick: true,
+        showConfirmButton: false
+    });
+    $('.container').show();
+}
+
 function verifyUser(token, name) {
     'use strict';
     var xhr = $.ajax({
@@ -94,20 +132,15 @@ function verifyUser(token, name) {
                 showConfirmButton: true
             });
         } else {
-
-            var title = (name !== undefined && name.length !== 0) ? 'Hello ' + name + '!' : 'Hello!';
-            swal({
-                title: title,
-                text: 'You are all set – <b>Best of luck!</b>',
-                type: 'success',
-                timer: 2000,
-                html: true,
-                allowEscapeKey: true,
-                allowOutsideClick: true,
-                showConfirmButton: false
-            });
-            $('.container').show();
-
+            // var x = getCookie();
+            
+            // if (x === 'true') {
+            //     showWelcome();
+            // } else {
+                
+            // }
+            
+            showWelcome();
         }
 
     });
