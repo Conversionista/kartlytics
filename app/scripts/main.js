@@ -1,6 +1,8 @@
 /* global $, swal, WebFont */
 
-/* Data to be populated in the select boxes... */
+/*
+* Data to be populated in the select boxes...
+*/
 var players = [{
     'email': 'andreas.almqvist@conversionista.se',
     'fname': 'Andreas',
@@ -152,9 +154,12 @@ var cups = [{
 }, {
     'cup': 'Egg'
 }, {
-    'cup': 'Crossing'
+    'cup': 'Triforce'
+}, {
+  'cup': 'Crossing'
+}, {
+  'cup': 'Bell'
 }];
-
 var modes = [{
     'mode': 50
 }, {
@@ -164,7 +169,6 @@ var modes = [{
 }, {
     'mode': 200
 }];
-
 var scores = [{
     'rank': 1,
     'score': 15
@@ -205,7 +209,7 @@ var scores = [{
 /* * * * * * * * * * * * * * * * */
 
 
-/* 
+/*
 * Helper functions/stuff
 */
 /* Inits' the webfont loader in order to get some nice fonts from TypeKit */
@@ -310,7 +314,7 @@ var nameField = $('#name'),
 window.aboutMe = window.aboutMe || {};
 /* * * * * * * * * * * * * * * * */
 
-/* 
+/*
 * Main stuff
 */
 /* Fucntion to send data to mixpanel about the user who logs in */
@@ -340,7 +344,7 @@ function trackGame(gid, email, cup, score, mode) {
 
     score = parseInt(score);
 
-    if (score === 15) { 
+    if (score === 15) {
         mixpanel.people.increment('Gold Medals');
         mixpanel.track('Gold Medal', {
             'Game ID': gid,
@@ -349,7 +353,7 @@ function trackGame(gid, email, cup, score, mode) {
             'Mode': mode
         });
     }
-    
+
     if (score === 12) {
         mixpanel.people.increment('Silver Medals');
         mixpanel.track('Silver Medal', {
@@ -359,7 +363,7 @@ function trackGame(gid, email, cup, score, mode) {
         'Mode': mode
         });
     }
-    
+
     if (score === 10) {
         mixpanel.people.increment('Bronze Medals');
         mixpanel.track('Bronze Medal', {
@@ -442,7 +446,7 @@ function checkUserValues() {
                     cancelButtonText: 'No, cancel plx!',
                       showCancelButton: true,
                       closeOnConfirm: false,
-                      showLoaderOnConfirm: true, 
+                      showLoaderOnConfirm: true,
                 }, function() {
 
                     $(emails).each(function(index, email) {
@@ -458,8 +462,8 @@ function checkUserValues() {
                             type: 'success'
                         });
                     }, 2000);
-                    
-                    /* Empty all fields after submit */              
+
+                    /* Empty all fields after submit */
                     var $select = $('select').selectize();
                     $.each($select, function(index) {
                         /* iterate through array or object */
@@ -606,18 +610,9 @@ function initEventListeners() {
 }
 /* * * * * * * * * * * * * * * * */
 
-/* 
+/*
 * When everything is done, get everything rollin'
 */
 /* Render select boxes and add event listeners */
 initSelectize();
 initEventListeners();
-
-// trackGame(gameId, 'simon@conversionista.se', 'Leaf', '6', '100');
-// trackGame(gameId, 'kajsa@conversionista.se', 'Leaf', '10', '100');
-// trackGame(gameId, 'andreas@conversionista.se', 'Leaf', '7', '100');
-
-// trackGame(gameId, 'simon@conversionista.se', 'Star', '6', '150');
-// trackGame(gameId, 'kajsa@conversionista.se', 'Star', '7', '150');
-// trackGame(gameId, 'andreas@conversionista.se', 'Star', '6', '150');
-// trackGame(gameId, 'jens@conversionista.se', 'Star', '3', '150');

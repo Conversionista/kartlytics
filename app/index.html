@@ -28,92 +28,90 @@
 </head>
 
 <body>
-    <header class="container">
-        <h1>Kartlytics</h1>
-        <hr />
-    </header>
-    <div class="container">
-        <form>
-            <div class="row">
-                <div class="col-xs">
-                    <label for="grandPrix">Grand Prix</label>
-                    <select class="u-full-width" id="grandPrix" placeholder="Pick a cup...">
-                    </select>
-                </div>
-                <div class="col-xs">
-                    <label for="mode">Mode</label>
-                    <select class="u-full-width" id="mode" placeholder="Pick a mode...">
-                    </select>
-                </div>
-            </div>
-            <hr />
-            <div class="row player">
-                <div class="col-xs-10">
-                    <label for="player1">Player 1</label>
-                    <select class="u-full-width contacts" name="email" id="player1" placeholder="Pick a name..."></select>
-                </div>
-                <div class="col-xs-2">
-                    <label for="rank1">Rank</label>
-                    <select name="rank" class="u-full-width" id="rank1"></select>
-                </div>
-            </div>
-            <div class="row player">
-                <div class="col-xs-10">
-                    <label for="player2">Player 2</label>
-                    <select class="u-full-width contacts" name="email" id="player2" placeholder="Pick a name..."></select>
-                </div>
-                <div class="col-xs-2">
-                    <label for="rank2">Rank</label>
-                    <select name="rank" class="u-full-width" id="rank2"></select>
-                </div>
-            </div>
-            <div class="row player">
-                <div class="col-xs-10">
-                    <label for="player3">Player 3</label>
-                    <select class="u-full-width contacts" name="email" id="player3" placeholder="Pick a name..."></select>
-                </div>
-                <div class="col-xs-2">
-                    <label for="rank3">Rank</label>
-                    <select name="rank" class="u-full-width" id="rank3"></select>
-                </div>
-            </div>
-            <div class="row player">
-                <div class="col-xs-10">
-                    <label for="player4">Player 4</label>
-                    <select class="u-full-width contacts" name="email" id="player4" placeholder="Pick a name..."></select>
-                </div>
-                <div class="col-xs-2">
-                    <label for="rank4">Rank</label>
-                    <select name="rank" class="u-full-width" id="rank4"></select>
-                </div>
-            </div>
-        </form>
-        <hr />
-        <button id="submit" class="btn btn-block btn-lg btn-success" disabled="true">Register game <i class="fa fa-trophy" aria-hidden="true"></i></button>
-    </div>
-    <footer class="container text-muted">
+  <header class="container">
+    <h1>Kartlytics</h1>
     <hr />
-        <p>Made with <i class="fa fa-heart"></i><span class="sr-only">♥</span> by the Conversionista team | <a href="https://github.com/Conversionista/kartlytics/issues" target="_blank" class="">Report a bug or an issue</a></p>
-    </footer>
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/sifter/sifter.js"></script>
-    <script src="/bower_components/microplugin/src/microplugin.js"></script>
-    <script src="/bower_components/selectize/dist/js/selectize.js"></script>
-    <script src="/bower_components/tether/dist/js/tether.js"></script>
-    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="/bower_components/hashids/dist/hashids.js"></script>
-    <script src="/bower_components/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="/bower_components/webfontloader/webfontloader.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-    <script src="https://ssl.geoplugin.net/javascript.gp?k=b83bf2d1f0b7c8a9"></script>
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <script src="scripts/authUser.js"></script>
-    <!-- endbuild -->
+  </header>
+  <div class="container">
+    <form>
+      <div class="row">
+        <div class="col-xs">
+          <label for="grandPrix">Grand Prix</label>
+          <select class="u-full-width" id="grandPrix" placeholder="Pick a cup..."></select>
+        </div>
+        <div class="col-xs">
+          <label for="mode">Mode</label>
+          <select class="u-full-width" id="mode" placeholder="Pick a mode..."></select>
+        </div>
+      </div>
+      <hr />
+      <div class="row player">
+        <div class="col-xs-10">
+          <label for="player1">Player 1</label>
+          <select class="u-full-width contacts" name="email" id="player1" placeholder="Pick a name..."></select>
+        </div>
+        <div class="col-xs-2">
+          <label for="rank1">Rank</label>
+          <select name="rank" class="u-full-width" id="rank1"></select>
+        </div>
+      </div>
+      <div class="row player">
+        <div class="col-xs-10">
+          <label for="player2">Player 2</label>
+          <select class="u-full-width contacts" name="email" id="player2" placeholder="Pick a name..."></select>
+        </div>
+        <div class="col-xs-2">
+          <label for="rank2">Rank</label>
+          <select name="rank" class="u-full-width" id="rank2"></select>
+        </div>
+      </div>
+      <div class="row player">
+        <div class="col-xs-10">
+          <label for="player3">Player 3</label>
+          <select class="u-full-width contacts" name="email" id="player3" placeholder="Pick a name..."></select>
+        </div>
+        <div class="col-xs-2">
+          <label for="rank3">Rank</label>
+          <select name="rank" class="u-full-width" id="rank3"></select>
+        </div>
+      </div>
+      <div class="row player">
+        <div class="col-xs-10">
+          <label for="player4">Player 4</label>
+          <select class="u-full-width contacts" name="email" id="player4" placeholder="Pick a name..."></select>
+        </div>
+        <div class="col-xs-2">
+          <label for="rank4">Rank</label>
+          <select name="rank" class="u-full-width" id="rank4"></select>
+        </div>
+      </div>
+    </form>
+    <hr />
+    <button id="submit" class="btn btn-block btn-lg btn-success" disabled="true">Register game <i class="fa fa-trophy" aria-hidden="true"></i></button>
+  </div>
+  <footer class="container text-muted">
+    <hr />
+    <p>Made with <i class="fa fa-heart"></i><span class="sr-only">♥</span> by the Conversionista team | <a href="https://github.com/Conversionista/kartlytics/issues" target="_blank" class="">Report a bug or an issue</a></p>
+  </footer>
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/sifter/sifter.js"></script>
+  <script src="/bower_components/microplugin/src/microplugin.js"></script>
+  <script src="/bower_components/selectize/dist/js/selectize.js"></script>
+  <script src="/bower_components/tether/dist/js/tether.js"></script>
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/bower_components/hashids/dist/hashids.js"></script>
+  <script src="/bower_components/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="/bower_components/webfontloader/webfontloader.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+  <script src="https://ssl.geoplugin.net/javascript.gp?k=b83bf2d1f0b7c8a9"></script>
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <script src="scripts/authUser.js"></script>
+  <!-- endbuild -->
 
-    <script src="https://apis.google.com/js/client.js?onload=handleClientLoad" async defer></script>
+  <script src="https://apis.google.com/js/client.js?onload=handleClientLoad" async defer></script>
 </body>
 </html>

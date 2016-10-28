@@ -55,18 +55,18 @@ function updateSigninStatus(isSignedIn) {
     if (isSignedIn) {
         $('.container').hide();
         var me = auth2.currentUser.get();
-        
-        
+
+
         aboutMe.fname = me.getBasicProfile().getGivenName();
         aboutMe.lname = me.getBasicProfile().getFamilyName();
         aboutMe.email = me.getBasicProfile().getEmail();
-        
+
         registerPlayer(aboutMe.email, aboutMe.fname, aboutMe.lname);
 
         var firstName = me.getBasicProfile().getGivenName();
         var id_token = me.getAuthResponse().id_token;
 
-        
+
         $('.container').show();
 
         verifyUser(id_token, firstName);
@@ -132,14 +132,6 @@ function verifyUser(token, name) {
                 showConfirmButton: true
             });
         } else {
-            // var x = getCookie();
-            
-            // if (x === 'true') {
-            //     showWelcome();
-            // } else {
-                
-            // }
-            
             showWelcome();
         }
 
