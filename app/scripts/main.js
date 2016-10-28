@@ -508,7 +508,23 @@ function initSelectize() {
         labelField: 'cup',
         searchField: ['cup'],
         options: cups,
-        sortField: 'text'
+        sortField: 'text',
+        render: {
+          item: function(item, escape) {
+            var name = formatName(item);
+            var label = item.cup;
+            return '<span class="label">' + escape(label) + '</span>';
+          },
+          option: function(item, escape) {
+            var name = formatName(item);
+            var label = item.cup;
+            return ''   +
+              '<div class="grand-prix">'   +
+                '<img class="cup-icon cup-icon-' + escape(label) + '" src="images/' + escape(label) + '.png" width="60" height="60" />' +
+                '<span class="label">' + escape(label) + '</span>' +
+              '</div>';
+          }
+        }
     });
 
     modeField.selectize({
