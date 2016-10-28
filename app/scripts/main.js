@@ -520,7 +520,7 @@ function initSelectize() {
             var label = item.cup;
             return ''   +
               '<div class="grand-prix">'   +
-                '<img class="cup-icon cup-icon-' + escape(label) + '" src="images/' + escape(label) + '.png" width="60" height="60" />' +
+                '<img class="cup-icon cup-icon-' + escape(label) + '" src="https://assets.conversionista.se/images/kartlytics/' + escape(label) + '.png" width="60" height="60" />' +
                 '<span class="label">' + escape(label) + '</span>' +
               '</div>';
           }
@@ -560,7 +560,7 @@ function initSelectize() {
                     var name = formatName(item);
                     var label = name || item.email;
                     var caption = name ? item.email : null;
-                    return '<div class="name"><img src="https://www.gravatar.com/avatar/' + md5(escape(item.email)) + '?s=50&d=' + encodeURIComponent('https://assets.conversionista.se/images/hero.jpg') + '"/>' +
+                    return '<div class="name"><img src="https://www.gravatar.com/avatar/' + md5(escape(item.email)) + '?s=50&d=' + encodeURIComponent('https://assets.conversionista.se/images/kartlytics/hero.jpg') + '"/>' +
                         '<span class="label">' + escape(label) + '</span>' +
 
                         '</div>';
