@@ -520,7 +520,7 @@ function initSelectize() {
             var label = item.cup;
             return ''   +
               '<div class="grand-prix">'   +
-                '<img class="cup-icon cup-icon-' + escape(label) + '" src="https://assets.conversionista.se/images/kartlytics/' + escape(label) + '.png" width="60" height="60" />' +
+                '<img class="cup-icon cup-icon-' + escape(label) + '" src="https://assets.conversionista.se/images/kartlytics/' + escape(label).toLowerCase() + '.png" width="60" height="60" />' +
                 '<span class="label">' + escape(label) + '</span>' +
               '</div>';
           }
