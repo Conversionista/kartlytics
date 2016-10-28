@@ -86,8 +86,17 @@ footer {
   font-weight: bold;
 }
 
+.name .label,
 .grand-prix .label {
   font-weight: bold;
+}
+
+.name {
+  img {
+    height: 50px;
+    margin-right: 1em;
+    width: 50px;  
+  }
 }
 
 .cup-icon {

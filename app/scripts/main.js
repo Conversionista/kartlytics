@@ -560,9 +560,9 @@ function initSelectize() {
                     var name = formatName(item);
                     var label = name || item.email;
                     var caption = name ? item.email : null;
-                    return '<div>' +
+                    return '<div class="name"><img src="https://www.gravatar.com/avatar/' + md5(escape(item.email)) + '?s=50&d=' + encodeURIComponent('https://assets.conversionista.se/images/hero.jpg') + '"/>' +
                         '<span class="label">' + escape(label) + '</span>' +
-                        (caption ? ' <span class="caption">' + escape(caption) + '</span>' : '') +
+
                         '</div>';
                 }
             },
