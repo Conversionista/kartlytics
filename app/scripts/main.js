@@ -167,6 +167,8 @@ var modes = [{
 }, {
     'mode': 150
 }, {
+    'mode': 175
+}, {
     'mode': 200
 }];
 var scores = [{
