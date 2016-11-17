@@ -1,7 +1,7 @@
 /* global $, gapi, swal */
 
 var endpoint = 'https://api.conversionista.se/gapi/',
-    clientId = '188686649588-pemricr51lakml69hcab3klrjcorb7hg.apps.googleusercontent.com',
+    clientId = '103212263499-henoskjlk74fmmtj2a8646m9n58jpn35.apps.googleusercontent.com',
     scopes = 'profile email phone',
     auth2;
 
